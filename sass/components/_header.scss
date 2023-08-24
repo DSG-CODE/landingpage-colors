@@ -1,0 +1,90 @@
+
+/*=============================================
+=            Component / HEADER           =
+=============================================*/
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background: url(../../images/desktop/image-header.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.nav{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+
+    &__logo{
+        width: 150px;
+    }
+
+    &__menu{
+        display: flex;
+        flex-direction: row;
+        gap: 60px;
+        list-style: none;
+    }
+
+    &__hamburguer{
+        display: none;
+    }
+
+    &__link{
+        text-decoration: none;
+        color: $white;
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.1em;
+
+        &--btn{
+            background-color: #ffffff2a;
+            border-radius: 20px;
+            padding: 10px 20px;
+            transition: .3s all ease-in;
+
+            &:hover{
+                background-color: $white;
+                color: $dark-blue;
+                font-family: 'Fraunces', serif;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.hero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+
+    &__title{
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 4em; 
+        text-transform: uppercase;
+        color: $white;
+    }
+
+    &__img{
+        margin-top: 8rem;
+        animation: bounce 3s ease infinite;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+/*=====  End Component / HEADER  ======*/
+
