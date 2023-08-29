@@ -98,5 +98,111 @@ body {
   }
 }
 /*=====  End Component / HEADER  ======*/
+/*=============================================
+=              Component / ORGANIZED            =
+=============================================*/
+.organized {
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  /*   width: 100%;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    &__content{
+        width: 70%;
+        display: grid;
+        place-content: center;
+        margin: auto;
+    }
+
+    &__content{
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.1em;
+        line-height: 1.5;
+        margin: 30px 0;
+    }
+
+    &__title{
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    &__img{
+        width: 100%;
+        background-position: center;
+        height: 100%;
+    }
+
+    &__cta{
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.3em;
+        text-decoration: none;
+        font-weight: 700;
+        color: $black;
+    } */
+}
+.organized__item01 {
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.organized__item02 {
+  background-color: aquamarine;
+  overflow: hidden;
+  background-image: url(../../images/desktop/image-transform.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.organized__item03 {
+  background-color: rgb(206, 138, 54);
+  overflow: hidden;
+  background-image: url(../../images/desktop/image-stand-out.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.organized__item04 {
+  background-color: hsl(0, 0%, 100%);
+  overflow: hidden;
+  display: grid;
+  place-items: center;
+}
+.organized__container {
+  width: 70%;
+}
+.organized__title {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 2.8rem;
+}
+.organized__content {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.1em;
+  line-height: 1.2;
+  margin: 30px 0;
+}
+.organized__cta {
+  font-family: "Barlow", sans-serif;
+  font-size: 1.3em;
+  text-decoration: none;
+  font-weight: 700;
+  color: #000;
+}
+.organized__cta--yellow {
+  border-bottom: 3px solid hsl(51, 100%, 49%);
+}
+.organized__cta--red {
+  border-bottom: 3px solid hsl(7, 99%, 70%);
+}
+
+/*=====  End of   Component / ORGANIZED  ======*/
 
 /*# sourceMappingURL=style.css.map */

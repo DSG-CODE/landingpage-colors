@@ -1,0 +1,121 @@
+
+/*=============================================
+=              Component / ORGANIZED            =
+=============================================*/
+.organized{
+
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    &__item01{
+        background-color: $white;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+    }
+
+    &__item02{
+        background-color:aquamarine;
+        overflow: hidden;
+        background-image: url(../../images/desktop/image-transform.jpg);
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__item03{
+        background-color: rgb(206, 138, 54);
+        overflow: hidden;
+        background-image: url(../../images/desktop/image-stand-out.jpg);
+        background-position:center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+
+    &__item04{
+        background-color:$white;
+        overflow: hidden;
+        display: grid;
+        place-items: center;
+    }
+
+    &__container{
+        width: 70%;
+    }
+
+    &__title{
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 2.8rem;
+    }
+
+    &__content{
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.1em;
+        line-height: 1.2;
+        margin: 30px 0;
+    }
+ 
+    &__cta{
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.3em;
+        text-decoration: none;
+        font-weight: 700;
+        color: $black;
+        &--yellow{
+            border-bottom: 3px solid $yellow;
+        }
+
+        &--red{
+            border-bottom: 3px solid $soft-red;
+        }
+    }
+
+  /*   width: 100%;
+    height: 100vh;
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+
+    &__content{
+        width: 70%;
+        display: grid;
+        place-content: center;
+        margin: auto;
+    }
+
+    &__content{
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.1em;
+        line-height: 1.5;
+        margin: 30px 0;
+    }
+
+    &__title{
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    &__img{
+        width: 100%;
+        background-position: center;
+        height: 100%;
+    }
+
+    &__cta{
+        font-family: 'Barlow', sans-serif;
+        font-size: 1.3em;
+        text-decoration: none;
+        font-weight: 700;
+        color: $black;
+    } */
+}
+
+
+/*=====  End of   Component / ORGANIZED  ======*/
+
+
