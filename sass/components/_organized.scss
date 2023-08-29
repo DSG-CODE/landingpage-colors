@@ -50,6 +50,7 @@
         font-family: 'Fraunces', serif;
         font-weight: 700;
         font-size: 2.8rem;
+        color: $desaturated-blue;
     }
 
     &__content{
@@ -60,59 +61,52 @@
     }
  
     &__cta{
-        font-family: 'Barlow', sans-serif;
+        font-family: 'Fraunces', serif;
         font-size: 1.3em;
         text-decoration: none;
         font-weight: 700;
-        color: $black;
+        color: $desaturated-blue;
         &--yellow{
-            border-bottom: 3px solid $yellow;
+            border-bottom: 3px solid hsla(51, 100%, 49%, 0.63);
+            transition: all .2s ease;
+            &:hover{
+                border-bottom: 5px solid $yellow;  
+            }
         }
 
         &--red{
-            border-bottom: 3px solid $soft-red;
+            border-bottom: 3px solid hsla(7, 99%, 70%, 0.63);
+            transition: all .2s ease;
+            &:hover{
+                border-bottom: 5px solid $soft-red;
+            }
         }
     }
+}
 
-  /*   width: 100%;
-    height: 100vh;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+@media  screen and (max-width:760px) {
+    .organized{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,80%);
+        &__item01{
+            order: 1;
+            text-align: center;
+        }
+        
+        &__item02{
+            order: 0;
+        }
 
-    &__content{
-        width: 70%;
-        display: grid;
-        place-content: center;
-        margin: auto;
-    }
+        &__item03{
+            order: 2;
+        }
 
-    &__content{
-        font-family: 'Barlow', sans-serif;
-        font-size: 1.1em;
-        line-height: 1.5;
-        margin: 30px 0;
-    }
-
-    &__title{
-        font-family: 'Fraunces', serif;
-        font-weight: 700;
-        font-size: 3rem;
-    }
-
-    &__img{
-        width: 100%;
-        background-position: center;
-        height: 100%;
-    }
-
-    &__cta{
-        font-family: 'Barlow', sans-serif;
-        font-size: 1.3em;
-        text-decoration: none;
-        font-weight: 700;
-        color: $black;
-    } */
+        &__item04{
+            order: 3;
+            text-align: center;
+        }
+}    
+    
 }
 
 

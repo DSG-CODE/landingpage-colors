@@ -107,45 +107,6 @@ body {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(2, 1fr);
-  /*   width: 100%;
-    height: 100vh;
-    display:grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
-
-    &__content{
-        width: 70%;
-        display: grid;
-        place-content: center;
-        margin: auto;
-    }
-
-    &__content{
-        font-family: 'Barlow', sans-serif;
-        font-size: 1.1em;
-        line-height: 1.5;
-        margin: 30px 0;
-    }
-
-    &__title{
-        font-family: 'Fraunces', serif;
-        font-weight: 700;
-        font-size: 3rem;
-    }
-
-    &__img{
-        width: 100%;
-        background-position: center;
-        height: 100%;
-    }
-
-    &__cta{
-        font-family: 'Barlow', sans-serif;
-        font-size: 1.3em;
-        text-decoration: none;
-        font-weight: 700;
-        color: $black;
-    } */
 }
 .organized__item01 {
   background-color: hsl(0, 0%, 100%);
@@ -182,6 +143,7 @@ body {
   font-family: "Fraunces", serif;
   font-weight: 700;
   font-size: 2.8rem;
+  color: hsl(212, 27%, 19%);
 }
 .organized__content {
   font-family: "Barlow", sans-serif;
@@ -190,19 +152,47 @@ body {
   margin: 30px 0;
 }
 .organized__cta {
-  font-family: "Barlow", sans-serif;
+  font-family: "Fraunces", serif;
   font-size: 1.3em;
   text-decoration: none;
   font-weight: 700;
-  color: #000;
+  color: hsl(212, 27%, 19%);
 }
 .organized__cta--yellow {
-  border-bottom: 3px solid hsl(51, 100%, 49%);
+  border-bottom: 3px solid hsla(51, 100%, 49%, 0.63);
+  transition: all 0.2s ease;
+}
+.organized__cta--yellow:hover {
+  border-bottom: 5px solid hsl(51, 100%, 49%);
 }
 .organized__cta--red {
-  border-bottom: 3px solid hsl(7, 99%, 70%);
+  border-bottom: 3px solid hsla(7, 99%, 70%, 0.63);
+  transition: all 0.2s ease;
+}
+.organized__cta--red:hover {
+  border-bottom: 5px solid hsl(7, 99%, 70%);
 }
 
+@media screen and (max-width: 760px) {
+  .organized {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 80%);
+  }
+  .organized__item01 {
+    order: 1;
+    text-align: center;
+  }
+  .organized__item02 {
+    order: 0;
+  }
+  .organized__item03 {
+    order: 2;
+  }
+  .organized__item04 {
+    order: 3;
+    text-align: center;
+  }
+}
 /*=====  End of   Component / ORGANIZED  ======*/
 
 /*# sourceMappingURL=style.css.map */
