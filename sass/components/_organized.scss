@@ -5,10 +5,10 @@
 .organized{
 
     width: 100%;
-    height: 100vh;
+    height: 200vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
 
     &__item01{
         background-color: $white;
@@ -42,6 +42,28 @@
         place-items: center;
     }
 
+    &__item05{
+        background-image: url(/images/desktop/image-graphic-design.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        align-content: end;
+        text-align: center;
+        padding: 70px;
+    }
+
+    &__item06{
+        background-image: url(/images/desktop/image-photography.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: grid;
+        align-content: end;
+        text-align: center;
+        padding: 70px;
+    }
+
     &__container{
         width: 70%;
     }
@@ -51,12 +73,16 @@
         font-weight: 700;
         font-size: 2.8rem;
         color: $desaturated-blue;
+
+        &--small{
+            font-size: 1.8rem;
+        }
     }
 
     &__content{
         font-family: 'Barlow', sans-serif;
         font-size: 1.1em;
-        line-height: 1.2;
+        line-height: 1.7;
         margin: 30px 0;
     }
  
@@ -87,7 +113,7 @@
 @media  screen and (max-width:760px) {
     .organized{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(4,80%);
+        grid-template-rows: repeat(6,40%);
         &__item01{
             order: 1;
             text-align: center;
@@ -95,15 +121,27 @@
         
         &__item02{
             order: 0;
+            background-image: url(../../images/mobile/image-transform.jpg);
         }
 
         &__item03{
             order: 2;
+            background-image: url(../../images/mobile/image-stand-out.jpg);
         }
 
         &__item04{
             order: 3;
             text-align: center;
+        }
+
+        &__item05{
+            order:4;
+            background-image: url(/images/mobile/image-graphic-design.jpg);
+        }
+
+        &__item06{
+            order: 5;
+            background-image: url(/images/mobile/image-photography.jpg);
         }
 }    
     
