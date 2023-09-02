@@ -5,10 +5,9 @@
 .organized{
 
     width: 100%;
-    height: 200vh;
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,1fr);
+    grid-template-rows: repeat(3,500px);
 
     &__item01{
         background-color: $white;
@@ -54,7 +53,7 @@
         display: grid;
         align-content: end;
         text-align: center;
-        padding: 70px;
+        padding: 10px 70px;
         order: 4;
     }
 
@@ -66,7 +65,7 @@
         display: grid;
         align-content: end;
         text-align: center;
-        padding: 70px;
+        padding: 10px 70px;
         order: 5;
     }
 
@@ -119,7 +118,7 @@
 @media  screen and (max-width:760px) {
     .organized{
         grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,40%);
+        grid-template-rows: repeat(6,450px);
         height: auto;
         &__item01{
             order: 1;
@@ -144,11 +143,13 @@
         &__item05{
             order:4;
             background-image: url(/images/mobile/image-graphic-design.jpg);
+             padding: 5px 20px;
         }
 
         &__item06{
             order: 5;
             background-image: url(/images/mobile/image-photography.jpg);
+             padding: 5px 20px;
         }
 }    
     
