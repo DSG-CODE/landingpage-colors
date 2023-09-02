@@ -238,6 +238,25 @@ body {
 }
 /*=====  End of   Component / ORGANIZED  ======*/
 /*=============================================
+=            GALLERY            =
+=============================================*/
+.gallery {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  overflow: hidden;
+}
+.gallery__item {
+  width: 100%;
+}
+
+@media screen and (max-width: 760px) {
+  .gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/*=====  End of GALLERY  ======*/
+/*=============================================
 =            Module Testimonials            =
 =============================================*/
 .testimonials {
@@ -257,7 +276,7 @@ body {
   margin-top: 84px;
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   justify-items: center;
 }
 .testimonials__item {
@@ -289,6 +308,11 @@ body {
   color: hsl(232deg, 10%, 55%);
 }
 
+@media screen and (max-width: 1430px) {
+  .testimonials {
+    width: 85%;
+  }
+}
 /*=====  End of Module Testimonials  ======*/
 
 /*# sourceMappingURL=style.css.map */

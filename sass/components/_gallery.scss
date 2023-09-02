@@ -1,0 +1,25 @@
+
+/*=============================================
+=            GALLERY            =
+=============================================*/
+
+.gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    overflow: hidden;
+
+    &__item{
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:760px) {
+    .gallery{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+
+/*=====  End of GALLERY  ======*/
+
