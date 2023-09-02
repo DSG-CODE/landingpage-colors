@@ -1,0 +1,66 @@
+
+/*=============================================
+=            Module Testimonials            =
+=============================================*/
+
+.testimonials{
+    width: 70%;
+    max-width: 1180xp;
+    margin: 128px auto;
+    color: $desaturated-blue;
+
+    &__title{
+        font-family: 'Fraunces', serif;
+        letter-spacing: 8px;
+        text-align: center;
+        text-transform: uppercase;
+        color: $grayish-blue;
+    }
+
+    &__container{
+        margin-top: 84px;
+        display: grid;
+        gap: 20px;
+        grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+        justify-items: center;
+    }
+
+    &__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__img{
+        border-radius: 50%;
+        width: 80px;
+    }
+
+    &__text{
+        line-height: 1.7;
+        text-align: center;
+        margin-top: 32px;
+    }
+
+    &__job{
+        margin-top: 54px;
+        text-align: center;
+        line-height: 1.5;
+
+        &-name{
+            font-family: 'Fraunces', serif;
+            font-weight: 700;
+            font-size: 1.1em;
+        }
+
+        &-content{
+            font-size: .8em;
+            color: $grayish-blue;
+        }
+    }
+    
+}
+
+
+/*=====  End of Module Testimonials  ======*/
+

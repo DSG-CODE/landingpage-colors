@@ -15,6 +15,7 @@
         overflow: hidden;
         display: grid;
         place-items: center;
+        order: 0;
     }
 
     &__item02{
@@ -24,6 +25,7 @@
         background-position:center;
         background-size: cover;
         background-repeat: no-repeat;
+        order: 1;
     }
 
     &__item03{
@@ -33,6 +35,7 @@
         background-position:center;
         background-size: cover;
         background-repeat: no-repeat;
+        order: 2;
     }
 
     &__item04{
@@ -40,6 +43,7 @@
         overflow: hidden;
         display: grid;
         place-items: center;
+        order: 3;
     }
 
     &__item05{
@@ -51,6 +55,7 @@
         align-content: end;
         text-align: center;
         padding: 70px;
+        order: 4;
     }
 
     &__item06{
@@ -62,6 +67,7 @@
         align-content: end;
         text-align: center;
         padding: 70px;
+        order: 5;
     }
 
     &__container{
@@ -114,6 +120,7 @@
     .organized{
         grid-template-columns: 1fr;
         grid-template-rows: repeat(6,40%);
+        height: auto;
         &__item01{
             order: 1;
             text-align: center;

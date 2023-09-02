@@ -12,6 +12,7 @@
 
 body {
   scroll-behavior: smooth;
+  font-family: "Barlow", sans-serif;
 }
 
 /* Colors */
@@ -54,7 +55,7 @@ body {
 }
 .nav__link {
   text-decoration: none;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
   font-family: "Barlow", sans-serif;
   font-size: 1.1em;
 }
@@ -65,8 +66,8 @@ body {
   transition: 0.3s all ease-in;
 }
 .nav__link--btn:hover {
-  background-color: hsl(0, 0%, 100%);
-  color: hsl(198, 62%, 26%);
+  background-color: hsl(0deg, 0%, 100%);
+  color: hsl(198deg, 62%, 26%);
   font-family: "Fraunces", serif;
   font-weight: 700;
 }
@@ -82,7 +83,7 @@ body {
   font-weight: 700;
   font-size: 4em;
   text-transform: uppercase;
-  color: hsl(0, 0%, 100%);
+  color: hsl(0deg, 0%, 100%);
 }
 .hero__img {
   margin-top: 8rem;
@@ -109,10 +110,11 @@ body {
   grid-template-rows: repeat(3, 1fr);
 }
 .organized__item01 {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0deg, 0%, 100%);
   overflow: hidden;
   display: grid;
   place-items: center;
+  order: 0;
 }
 .organized__item02 {
   background-color: aquamarine;
@@ -121,6 +123,7 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  order: 1;
 }
 .organized__item03 {
   background-color: rgb(206, 138, 54);
@@ -129,12 +132,14 @@ body {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  order: 2;
 }
 .organized__item04 {
-  background-color: hsl(0, 0%, 100%);
+  background-color: hsl(0deg, 0%, 100%);
   overflow: hidden;
   display: grid;
   place-items: center;
+  order: 3;
 }
 .organized__item05 {
   background-image: url(/images/desktop/image-graphic-design.jpg);
@@ -145,6 +150,7 @@ body {
   align-content: end;
   text-align: center;
   padding: 70px;
+  order: 4;
 }
 .organized__item06 {
   background-image: url(/images/desktop/image-photography.jpg);
@@ -155,6 +161,7 @@ body {
   align-content: end;
   text-align: center;
   padding: 70px;
+  order: 5;
 }
 .organized__container {
   width: 70%;
@@ -163,7 +170,7 @@ body {
   font-family: "Fraunces", serif;
   font-weight: 700;
   font-size: 2.8rem;
-  color: hsl(212, 27%, 19%);
+  color: hsl(212deg, 27%, 19%);
 }
 .organized__title--small {
   font-size: 1.8rem;
@@ -179,27 +186,28 @@ body {
   font-size: 1.3em;
   text-decoration: none;
   font-weight: 700;
-  color: hsl(212, 27%, 19%);
+  color: hsl(212deg, 27%, 19%);
 }
 .organized__cta--yellow {
-  border-bottom: 3px solid hsla(51, 100%, 49%, 0.63);
+  border-bottom: 3px solid hsla(51deg, 100%, 49%, 0.63);
   transition: all 0.2s ease;
 }
 .organized__cta--yellow:hover {
-  border-bottom: 5px solid hsl(51, 100%, 49%);
+  border-bottom: 5px solid hsl(51deg, 100%, 49%);
 }
 .organized__cta--red {
-  border-bottom: 3px solid hsla(7, 99%, 70%, 0.63);
+  border-bottom: 3px solid hsla(7deg, 99%, 70%, 0.63);
   transition: all 0.2s ease;
 }
 .organized__cta--red:hover {
-  border-bottom: 5px solid hsl(7, 99%, 70%);
+  border-bottom: 5px solid hsl(7deg, 99%, 70%);
 }
 
 @media screen and (max-width: 760px) {
   .organized {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(6, 40%);
+    height: auto;
   }
   .organized__item01 {
     order: 1;
@@ -227,5 +235,58 @@ body {
   }
 }
 /*=====  End of   Component / ORGANIZED  ======*/
+/*=============================================
+=            Module Testimonials            =
+=============================================*/
+.testimonials {
+  width: 70%;
+  max-width: 1180xp;
+  margin: 128px auto;
+  color: hsl(212deg, 27%, 19%);
+}
+.testimonials__title {
+  font-family: "Fraunces", serif;
+  letter-spacing: 8px;
+  text-align: center;
+  text-transform: uppercase;
+  color: hsl(232deg, 10%, 55%);
+}
+.testimonials__container {
+  margin-top: 84px;
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  justify-items: center;
+}
+.testimonials__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.testimonials__img {
+  border-radius: 50%;
+  width: 80px;
+}
+.testimonials__text {
+  line-height: 1.7;
+  text-align: center;
+  margin-top: 32px;
+}
+.testimonials__job {
+  margin-top: 54px;
+  text-align: center;
+  line-height: 1.5;
+}
+.testimonials__job-name {
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  font-size: 1.1em;
+}
+.testimonials__job-content {
+  font-size: 0.8em;
+  color: hsl(232deg, 10%, 55%);
+}
+
+/*=====  End of Module Testimonials  ======*/
 
 /*# sourceMappingURL=style.css.map */
