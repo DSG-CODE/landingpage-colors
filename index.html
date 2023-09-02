@@ -102,34 +102,51 @@
 
 <!-- Gallery -->
 <div class="gallery">
-  <img src="images/desktop/image-gallery-milkbottles.jpg" class="gallery__item" alt="">
-  <img src="images/desktop/image-gallery-orange.jpg" class="gallery__item" alt="">
-  <img src="images/desktop/image-gallery-cone.jpg" class="gallery__item" alt="">
-  <img src="images/desktop/image-gallery-sugarcubes.jpg" class="gallery__item" alt="">
+  <picture class="gallery__item">
+    <source media="(max-width:760px)" srcset="images/mobile/image-gallery-milkbottles.jpg">
+    <source media="(min-width: 761px)" srcset="images/desktop/image-gallery-milkbottles.jpg">
+    <img src="images/desktop/image-gallery-milkbottles.jpg" alt="">
+  </picture>
+  
+
+  <picture class="gallery__item">
+    <source media="(max-width: 760px)" srcset="images/mobile/image-gallery-orange.jpg">
+    <source media="(min-width: 761px)" srcset="images/desktop/image-gallery-orange.jpg">
+    <img src="images/desktop/image-gallery-orange.jpg"  alt="">
+  </picture>
+
+  <picture class="gallery__item">
+    <source media="(max-width: 760px)" srcset="images/mobile/image-gallery-cone.jpg">
+    <source media="(min-width: 761px)" srcset="images/desktop/image-gallery-cone.jpg">
+    <img src="images/desktop/image-gallery-cone.jpg"  alt="">
+  </picture>
+
+  <picture class="gallery__item">
+    <source media="(max-width: 760px)" srcset="images/mobile/image-gallery-sugar-cubes.jpg">
+    <source media="(min-width: 761px)" srcset="images/mobile/image-gallery-sugar-cubes.jpg">
+    <img src="images/desktop/image-gallery-sugarcubes.jpg"  alt="">
+  </picture>
 </div>
 <!-- Termina Gallery -->
 
 
-  <!--
-
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  
-  
-  
-
-  About
-  Services
-  Projects
-  Contact -->
+<!-- Footer -->
+<footer class="footer">
+  <img src="images/logo-footer.svg" class="footer__logo" alt="">
+  <ul class="footer__menu">
+    <a href="#" class="footer__link"><li class="footer__items">About</li></a>
+    <a href="#" class="footer__link"><li class="footer__items">Services</li></a>
+    <a href="#" class="footer__link"><li class="footer__items">Projects</li></a>
+    <a href="#" class="footer__link"><li class="footer__items">Contact</li></a>
+  </ul>
+  <div class="footer__social">
+    <a href="#"><img src="images/icon-facebook.svg" alt=""></a>
+    <a href="#"><img src="images/icon-instagram.svg" alt=""></a>
+    <a href="#"><img src="images/icon-twitter.svg" alt=""></a>
+    <a href="#"><img src="images/icon-pinterest.svg" alt=""></a>
+  </div>
+</footer>
+<!-- Termina Footer -->
 
 
 </body>
