@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /* Settings */
 /*=============================================
 =            Settings           =
@@ -40,6 +41,7 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 80px;
+  position: relative;
 }
 .nav__logo {
   width: 150px;
@@ -97,6 +99,60 @@ body {
   }
   50% {
     transform: translateY(-20px);
+  }
+}
+@media screen and (max-width: 760px) {
+  .nav__menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    background-color: hsl(0deg, 0%, 100%);
+    flex-direction: column;
+    row-gap: 50px;
+    text-align: center;
+    padding: 50px 0;
+    z-index: 100;
+    opacity: 0; /* Establecemos la opacidad inicial en 0 */
+    transform: translateY(-10px); /* Desplazamos el menú hacia arriba */
+    transition: opacity 0.3s, transform 0.3s; /* Agregamos la transición */
+  }
+  .nav__menu::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -20px;
+    right: 0;
+    border: 10px solid hsl(0deg, 0%, 100%);
+    border-top-color: transparent;
+    border-left-color: transparent;
+  }
+  .nav__menu--active {
+    opacity: 1; /* Mostramos el menú */
+    transform: translateY(0); /* Lo movemos de nuevo a su posición original */
+    display: flex;
+  }
+  .nav__hamburguer {
+    display: block;
+    cursor: pointer;
+  }
+  .nav__link {
+    color: hsl(198deg, 62%, 26%);
+    font-size: 1.5em;
+    font-weight: 500;
+  }
+  .nav__link--btn {
+    background-color: hsl(51deg, 100%, 49%);
+    border-radius: 30px;
+    padding: 15px 30px;
+    transition: 0.3s all ease-in;
+  }
+  .nav__link--btn:hover {
+    background-color: hsl(198deg, 62%, 26%);
+    color: hsl(0deg, 0%, 100%);
+    font-family: "Fraunces", serif;
+    font-weight: 700;
   }
 }
 /*=====  End Component / HEADER  ======*/

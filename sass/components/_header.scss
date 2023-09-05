@@ -19,7 +19,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-
+    position: relative;
     &__logo{
         width: 150px;
     }
@@ -86,6 +86,73 @@
       transform: translateY(-20px);
     }
   }
+
+
+  @media screen and (max-width:760px){
+    .nav{
+        &__menu{
+            &::before{
+                content: '';    
+                display: block;
+                position: absolute;
+                top: -20px;
+                right: 0;
+                border: 10px solid $white;
+                border-top-color: transparent;
+                border-left-color: transparent;
+            }
+
+            display: none;
+            position: absolute;
+            top:100%;
+            right: 0;
+            left: 0;
+            background-color: $white;
+            flex-direction: column;
+            row-gap: 50px;
+            text-align: center;
+            padding: 50px 0;
+            z-index: 100;
+            opacity: 0; /* Establecemos la opacidad inicial en 0 */
+            transform: translateY(-10px); /* Desplazamos el menú hacia arriba */
+            transition: opacity 0.3s, transform 0.3s; /* Agregamos la transición */
+
+            &--active{
+                opacity: 1; /* Mostramos el menú */
+                transform: translateY(0); /* Lo movemos de nuevo a su posición original */
+                display: flex;
+            }
+
+        }
+
+        &__hamburguer{
+            display: block;
+            cursor: pointer;
+        }
+
+        &__link{
+            color: $dark-blue;
+            font-size: 1.5em;
+            font-weight: 500;
+    
+            &--btn{
+                background-color: $yellow;
+                border-radius: 30px;
+                padding: 15px 30px;
+                transition: .3s all ease-in;
+    
+                &:hover{
+                    background-color: $dark-blue;
+                    color: $white;
+                    font-family: 'Fraunces', serif;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+  }
+
+  
 
 /*=====  End Component / HEADER  ======*/
 
